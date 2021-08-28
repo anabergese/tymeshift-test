@@ -1,0 +1,40 @@
+.nav {
+  width: 100vw;
+  height: 96px;
+}
+
+.all-locations {
+  width:  90px;
+  height: 28px;
+  y:  19px;
+  x:  30px;
+  /*Typeface Lato*/
+  opacity: 30%;
+  font-weight: bold;
+  font-size: 16px;
+  /*Character:  0.18;*/
+  line-height: 1.75;
+  color: #001122;
+
+  /*Alignment horizontal: left and Vertical: top;*/
+  vertical-align: top;
+  horizontal-align: left;
+}
+
+.company-locations {
+  width:  149px;
+  height: 28px;
+  y:  47x;
+  x:  30px;
+  /*Typeface Lato*/
+  opacity: 80%;
+  font-weight: semibold;
+  font-size: 22px;
+  /*Character:  0;*/
+  line-height: 1.273;
+  color: #001122;
+
+  /*Alignment horizontal: left and Vertical: top;*/
+  vertical-align: top;
+  horizontal-align: left;
+}

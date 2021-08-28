@@ -1,0 +1,20 @@
+.cards {
+  width:  340px;
+  height: 139px;
+  /*radius: 2px;  Revisar esto */
+
+  /*  Fills: */
+  background-color: #F6F6F6;
+  /*opacity: 20%;*/
+  /* Borders: */
+  border-color: #001122;
+  /*opacity: 10%; el border opacity*/
+  border-width: 1px;
+  /*border-position: outside; /* Revisar esto */
+
+}
+
+
+.company-name {
+  color:  red;
+}
