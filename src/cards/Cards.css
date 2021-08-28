@@ -4,17 +4,39 @@
   /*radius: 2px;  Revisar esto */
 
   /*  Fills: */
-  background-color: #F6F6F6;
-  /*opacity: 20%;*/
+  background-color: RGBA(246, 246, 246, 0.2);
+
   /* Borders: */
-  border-color: #001122;
-  /*opacity: 10%; el border opacity*/
-  border-width: 1px;
+  border: 1px solid RGBA(0, 17, 34, 0.1);
+  border-radius: 2px;
   /*border-position: outside; /* Revisar esto */
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.company-name {
-  color:  red;
+.card {
+  width: 290px;
+  height: 109px;
 }
+
+.location-name {
+  margin-top: 0px;
+  width: 264px;
+  height: 32px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.778;
+ }
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+li img {
+  width: 14px;
+  height: 14px;
+}
+
