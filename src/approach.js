@@ -11,3 +11,7 @@
 // were correctly connected.
 
 // 5. Followed sketch to add styles to Navbar & Cards components.
+
+// 6. Created repository in GitHub
+
+// 7. Finish base style of card and navbar

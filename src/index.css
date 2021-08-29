@@ -1,4 +1,6 @@
 /*el estilo general del body y letras aqui*/
 body {
-  background-color:  #FFFF;
+  background-color:  #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  color: RGB(0, 17, 34);
 }

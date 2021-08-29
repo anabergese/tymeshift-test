@@ -1,7 +1,6 @@
 .cards {
   width:  340px;
   height: 139px;
-  /*radius: 2px;  Revisar esto */
 
   /*  Fills: */
   background-color: RGBA(246, 246, 246, 0.2);
@@ -9,7 +8,6 @@
   /* Borders: */
   border: 1px solid RGBA(0, 17, 34, 0.1);
   border-radius: 2px;
-  /*border-position: outside; /* Revisar esto */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +20,7 @@
 
 .location-name {
   margin-top: 0px;
-  width: 264px;
+  width: 290px;
   height: 32px;
   margin-bottom: 5px;
   font-weight: bold;
@@ -35,8 +33,15 @@ ul {
   padding-left: 0px;
 }
 
+li {
+  font-weight: medium;
+  font-size:  14px;
+  line-height: 1.714;
+}
+
 li img {
   width: 14px;
   height: 14px;
+  margin-right: 8px;
 }
 
