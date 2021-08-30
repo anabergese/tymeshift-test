@@ -14,4 +14,9 @@
 
 // 6. Created repository in GitHub
 
-// 7. Finish base style of card and navbar
+// 7. Finish base style of card and navbar. Now time to fech data from the API
+
+// 8. Fetch api info done. Need display the Api info in card format
+
+    // I need to create cards with each of the locations;
+
