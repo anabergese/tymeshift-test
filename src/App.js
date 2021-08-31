@@ -26,7 +26,7 @@ function App() {
     <div className="App">
       <Nav />
       {locations.map((location) => (
-        <Cards location={location}/>
+        <Cards location={location} />
       ))}
     </div>
   );

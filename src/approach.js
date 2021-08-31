@@ -18,5 +18,10 @@
 
 // 8. Fetch api info done. Need display the Api info in card format
 
-    // I need to create cards with each of the locations;
+// 9. I create differents cards with each of the locations (I struggle with date)
 
+
+
+
+// Consults:
+// la fecha gtm??? el modal debe cerrarse desde la x si o si?
