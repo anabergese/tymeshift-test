@@ -45,3 +45,9 @@ li img {
   margin-right: 8px;
 }
 
+
+/*Style for hover*/
+
+.cards:hover {
+  background-color: RGB(246, 246, 246);
+}

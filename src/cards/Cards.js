@@ -1,16 +1,13 @@
 import React from 'react';
 
-const Cards = ( { location } ) => {
+const Cards = ( { location, openModal } ) => {
   const fecha = new Date(location.createdAt); // Fri, 05 Mar 2021 09:10:35 GMT
   const hour = fecha.getHours();
   const minutes = fecha.getMinutes();
 
 
   return(
-    // I need to create cards with each of the locations;
-
-    <div className="cards">
-
+    <div className="cards" onClick={openModal}>
       {/*<p>edit icon</p>*/}
       <div className="card">
         <h4 className="location-name">{location.name}</h4>
@@ -23,16 +20,7 @@ const Cards = ( { location } ) => {
         </div>
       </div>
     </div>
-
   );
 };
 
 export default Cards;
-
-
-// API information:
-// createdAt: "2021-03-05T09:10:35.462Z"
-// description: "Investment Account"
-// id: "1"
-// name: "McGlynnview"
-// userCount: 6221
