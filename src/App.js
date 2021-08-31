@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 // Importing styles:
@@ -9,27 +9,28 @@ import './navbar/Nav.css';
 // Importing the Components:
 import Cards from './cards/Cards'
 import Nav from './navbar/Nav';
-// import UseFetch from './UseFetch';
 
+// e.preventDefault();
 
 function App() {
-  const [ location, setLocation ] = useState("");
+  const [ locations, setLocations ] = useState([]);
 
-  const fetch = () => {
-        axios.get('https://6033c4d8843b15001793194e.mockapi.io/api/locations')
-        .then((response) => {
-          setLocation(response.data);
-        })
-  }
+  useEffect(() => {
+    axios.get('https://6033c4d8843b15001793194e.mockapi.io/api/locations')
+    .then((response) => {
+      setLocations(response.data);
+    })
+  }, []);
 
   return (
     <div className="App">
       <Nav />
-      <Cards location={location}/>
-      <button onClick={fetch}>Fetching data</button>
-   {/*   <UseFetch />*/}
+      {locations.map((location) => (
+        <Cards location={location}/>
+      ))}
     </div>
   );
+
 }
 
 export default App;
