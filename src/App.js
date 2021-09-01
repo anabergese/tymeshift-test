@@ -10,9 +10,7 @@ import './modal/Modal.css';
 // Importing the Components:
 import Cards from './cards/Cards'
 import Nav from './navbar/Nav';
-import Modal from './modal/Modal'
 
-// e.preventDefault();
 
 function App() {
   const [ locations, setLocations ] = useState([]);
@@ -34,9 +32,14 @@ function App() {
     <div className="App">
       <Nav />
       {locations.map((location) => (
-        <Cards location={location} key={location.id} openModal={openModal}/>
+        <Cards
+          location={location}
+          key={location.id}
+          openModal={openModal}
+          showModal={showModal}
+          setshowModal={setShowModal}
+        />
       ))}
-      <Modal showModal={showModal} setshowModal={setShowModal}/>
     </div>
   );
 
