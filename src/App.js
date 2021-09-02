@@ -1,21 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+
 // Importing styles:
 import './App.css';
-import './cards/Cards.css';
-import './navbar/Nav.css';
-import './modal/Modal.css';
+import './Cards.css';
+import './Nav.css';
+import './Modal.css';
 
 // Importing the Components:
 import Cards from './components/Cards'
 import Nav from './components/Nav';
+import Modal from './components/Modal';
 
 
 function App() {
   const [ locations, setLocations ] = useState([]);
   const [ showModal, setShowModal ] = useState("");
   const [ views, setViews ] = useState(0);
+  const [ cardIdSelected, setCardIdSelected ] = useState(0);
 
   useEffect(() => {
     axios.get('https://6033c4d8843b15001793194e.mockapi.io/api/locations')
@@ -30,6 +33,9 @@ function App() {
     setViews(views + 1);
   }
 
+  const cardId = (cardId) => {
+    setCardIdSelected(cardId => location.id);
+  }
   return (
     <div className="App">
       <Nav />
@@ -37,6 +43,7 @@ function App() {
         <Cards
           location={location}
           key={location.id}
+          id={cardId}
           openModal={openModal}
           showModal={showModal}
           setshowModal={setShowModal}
@@ -44,6 +51,12 @@ function App() {
           setViews={setViews}
         />
       ))}
+      <Modal
+        showModal={showModal}
+        setShowModal={setShowModal}
+        cardIdSelected={cardIdSelected}
+        views={views}
+        />
     </div>
   );
 

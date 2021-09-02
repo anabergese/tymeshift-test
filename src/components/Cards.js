@@ -1,7 +1,6 @@
 import React from 'react';
-import Modal from './Modal';
 
-const Cards = ( { location, openModal, showModal, setShowModal, views } ) => {
+const Cards = ( { location, openModal, views } ) => {
   const fecha = new Date(location.createdAt); // Fri, 05 Mar 2021 09:10:35 GMT
   const hour = fecha.getHours();
   const minutes = fecha.getMinutes();
@@ -19,13 +18,6 @@ const Cards = ( { location, openModal, showModal, setShowModal, views } ) => {
           </ul>
         </div>
       </div>
-      <Modal
-        showModal={showModal}
-        setShowModal={setShowModal}
-        location={location}
-        id={location.id}
-        views={views}
-        />
     </div>
   );
 };

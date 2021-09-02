@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Modal = ( { showModal, setShowModal, location, views } ) => {
-  const fecha = new Date(location.createdAt); // Fri, 05 Mar 2021 09:10:35 GMT
+const Modal = ( { showModal, setShowModal, locations, views } ) => {
+  const fecha = new Date(locations.createdAt); // Fri, 05 Mar 2021 09:10:35 GMT
   const hour = fecha.getHours();
   const minutes = fecha.getMinutes();
 
