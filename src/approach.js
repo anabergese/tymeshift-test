@@ -20,7 +20,7 @@
 
 // 9. I create differents cards with each of the locations (I struggle with date)
 
-
+// 'Added react-spring to make use of animations'
 
 
 // Consults:

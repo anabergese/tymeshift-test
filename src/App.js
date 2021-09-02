@@ -8,13 +8,14 @@ import './navbar/Nav.css';
 import './modal/Modal.css';
 
 // Importing the Components:
-import Cards from './cards/Cards'
-import Nav from './navbar/Nav';
+import Cards from './components/Cards'
+import Nav from './components/Nav';
 
 
 function App() {
   const [ locations, setLocations ] = useState([]);
-  const [ showModal, setShowModal ] = useState("false");
+  const [ showModal, setShowModal ] = useState("");
+  const [ views, setViews ] = useState(0);
 
   useEffect(() => {
     axios.get('https://6033c4d8843b15001793194e.mockapi.io/api/locations')
@@ -23,9 +24,10 @@ function App() {
     })
   }, []);
 
+
   const openModal = () => {
-    console.log("hola");
-    setShowModal( prev => !prev);
+    setShowModal( prev => !prev );
+    setViews(views + 1);
   }
 
   return (
@@ -38,6 +40,8 @@ function App() {
           openModal={openModal}
           showModal={showModal}
           setshowModal={setShowModal}
+          views={views}
+          setViews={setViews}
         />
       ))}
     </div>
