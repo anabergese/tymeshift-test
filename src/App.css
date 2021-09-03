@@ -1,1 +1,6 @@
 /*El estilo del componente apps*/
+.cards-app {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+}

@@ -1,7 +1,7 @@
 .cards {
   width:  340px;
   height: 139px;
-
+  margin: 10px;
   /*  Fills: */
   background-color: RGBA(246, 246, 246, 0.2);
 
@@ -52,14 +52,15 @@ li img {
   height: 14px;
   padding:  6px;
   display: none;
+  right: 0;
 }
 
 .edit img {
   width: 14px;
   height: 14px;
 }
-/*Style for hover*/
 
+/*Style for hover*/
 .cards:hover {
   background-color: RGB(246, 246, 246);
 }

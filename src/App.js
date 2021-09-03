@@ -32,14 +32,16 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      {locations.map((location) => (
-        <Card
-          location={location}
-          key={location.id}
-          onClick={handleCardClick}
-          showModal={isModalShown(location)}
-        />
-      ))}
+      <div className="cards-app">
+        {locations.map((location) => (
+          <Card
+            location={location}
+            key={location.id}
+            onClick={handleCardClick}
+            showModal={isModalShown(location)}
+          />
+        ))}
+      </div>
     </div>
   );
 }
