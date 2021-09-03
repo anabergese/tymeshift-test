@@ -45,9 +45,27 @@ li img {
   margin-right: 8px;
 }
 
+.edit {
+  background-color: RGB(255, 255, 255);
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  padding:  6px;
+  display: none;
+}
 
+.edit img {
+  width: 14px;
+  height: 14px;
+}
 /*Style for hover*/
 
 .cards:hover {
   background-color: RGB(246, 246, 246);
+}
+
+.cards:hover > .edit {
+  display: flex;
+  justify-content: center;
+  align-items:  center;
 }
