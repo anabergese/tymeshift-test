@@ -1,39 +1,27 @@
 .nav {
   width: 100vw;
   height: 96px;
-  display:  flex;
-  align-items: center;
   border-bottom: 1px solid RGBA(0, 17, 34, 0.1);
 }
 
 .navbar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width:  149px;
-  height: 56px;
-  margin:  19px 1741px 21px 30px;
+  margin: 19px auto 21px 30px;
 }
 
 .all-locations {
-  width:  90px;
-  height: 28px;
   margin: 0;
   opacity: 30%;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.75;
 }
 
 .company-locations {
-  width:  149px;
-  height: 28px;
-  margin: 0;
-  opacity: 80%;
-  font-weight: semibold;
+  width:  100%;
+  font-weight: 600;
   font-size: 22px;
   line-height: 1.273;
   letter-spacing: 0;
+  margin: 0;
 }
 
