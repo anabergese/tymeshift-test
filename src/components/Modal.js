@@ -14,7 +14,7 @@ const Modal = ( { showModal, setShowModal, location, views } ) => {
               <img className="close" src="Close.svg" alt="Close icon"/>
               <h4 className="location-name">{location.name}</h4>
             </div>
-            <div className="modal-description">
+            <div className="modal-information">
               <div className="location">
                 <ul>
                   <li><img src="Users.svg" alt="Users icon"/>{location.userCount}</li>

@@ -1,18 +1,14 @@
 .cards {
+  width:  340px;
+  height: 139px;
+  background-color: RGBA(246, 246, 246, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  width:  340px;
-  height: 139px;
   margin: 10px;
-  /*  Fills: */
-  background-color: RGBA(246, 246, 246, 0.2);
-
-  /* Borders: */
   border: 1px solid RGBA(0, 17, 34, 0.1);
   border-radius: 2px;
-
 }
 
 .card {
@@ -21,9 +17,9 @@
 }
 
 .location-name {
-  margin-top: 0px;
   width: 290px;
   height: 32px;
+  margin-top: 0px;
   margin-bottom: 5px;
   font-weight: 700;
   font-size: 18px;
@@ -48,15 +44,15 @@ li img {
 }
 
 .edit {
-  background-color: RGB(255, 255, 255);
-  border-radius: 50%;
   width: 14px;
   height: 14px;
-  padding:  6px;
+  background-color: RGB(255, 255, 255);
   display: none;
   position: absolute;
   top:  10px;
   right:  10px;
+  border-radius: 50%;
+  padding:  6px;
 }
 
 /*Style for hover*/

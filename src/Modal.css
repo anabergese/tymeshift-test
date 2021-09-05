@@ -2,26 +2,26 @@
   width: 100%;
   height: 100%;
   background-color: RGB(0, 17, 34, 0.6);
-  position:  fixed;
   display: flex;
-  left: 0px;
-  top: 0px;
   justify-content: center;
   align-items: center;
+  position:  fixed;
+  left: 0px;
+  top: 0px;
 }
 
 .modal-wrapper {
   width: 440px;
   height: 350px;
-  padding: 25px;
+  box-shadow: 0 8px 16px -4px RGBA(0, 17, 34, 0.2);
   background-color: RGB(255, 255, 255);
   position: relative;
-  box-shadow: 0 8px 16px -4px RGBA(0, 17, 34, 0.2);
+  padding: 25px;
 }
 
 .close {
   position: absolute;
-  right:  25px;
+  right: 25px;
 }
 
 .description p {
@@ -33,16 +33,14 @@
 }
 
 .btn-done {
+  width: 64px;
+  height: 32px;
   background-color: RGB(55, 178, 77);
   color: RGB(255, 255, 255);
   position: absolute;
   right: 25px;
   bottom: 10px;
-  width: 64px;
-  height: 32px;
   border-radius: 16px;
   border-style: none;
   font-size: 14px;
-/*  font-weight: semibold;
-  line-height: 1.714;*/
 }

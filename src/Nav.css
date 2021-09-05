@@ -18,10 +18,10 @@
 
 .company-locations {
   width:  100%;
+  margin: 0;
   font-weight: 600;
   font-size: 22px;
   line-height: 1.273;
   letter-spacing: 0;
-  margin: 0;
 }
 
