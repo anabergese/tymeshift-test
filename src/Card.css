@@ -56,11 +56,11 @@ li img {
 }
 
 /*Style for hover*/
-.cards:hover {
+.card-wrapper:hover {
   background-color: RGB(246, 246, 246);
 }
 
-.cards:hover > .edit {
+.card-wrapper:hover > .edit {
   display: flex;
   justify-content: center;
   align-items:  center;

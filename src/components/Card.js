@@ -1,20 +1,21 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
+import "./../Card.css";
 
 const Card = ({ location, onClick, showModal }) => {
   const [views, setViews] = useState(0);
 
-  const fecha = new Date(location.createdAt); // Fri, 05 Mar 2021 09:10:35 GMT
+  const fecha = new Date(location.createdAt);
   const hour = fecha.getHours();
   const minutes = fecha.getMinutes();
 
   const handleCardClick = () => {
-    setViews((prev) => prev + 1);
-    onClick(location.id);
+    setViews((prev) => prev + 1)
+    onClick(location.id)
   };
 
   const handleModalClick = () => {
-    onClick("");
+    onClick("")
   };
 
   return (
@@ -35,7 +36,7 @@ const Card = ({ location, onClick, showModal }) => {
             </li>
             <li>
               <img src="Views.svg" alt="Views icon" />
-              {views} View
+              {views} {views > 1 ? "Views" : "View"}
             </li>
           </ul>
         </div>
