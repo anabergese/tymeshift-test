@@ -12,12 +12,12 @@ const Modal = ( { showModal, setShowModal, location, views } ) => {
           <div className="modal-wrapper">
             <div className="modal-title">
               <img className="close" src="Close.svg" alt="Close icon"/>
-              <h4 className="location-name">{location.name}</h4>
+              <h4 className="location-name-modal">{location.name}</h4>
             </div>
             <div className="modal-information">
               <div className="location">
                 <ul>
-                  <li><img src="Users.svg" alt="Users icon"/>{location.userCount}</li>
+                  <li><img src="Users.svg" alt="Users icon"/>{location.userCount} Users</li>
                   <li><img src="Timezone.svg" alt="Timezone icon"/>{hour}:{minutes}{hour >= 12 ? 'pm' : 'am'} (GMT +01:00)</li>
                   <li><img src="Views.svg" alt="Views icon"/>{views} View</li>
                 </ul>

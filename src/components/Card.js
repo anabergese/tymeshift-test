@@ -18,7 +18,7 @@ const Card = ({ location, onClick, showModal }) => {
   };
 
   return (
-    <div className="cards">
+    <div className="card-wrapper">
       <div className="edit"><img src="Edit.svg" alt="Edit icon" /></div>
       <div className="card" onClick={handleCardClick}>
         <h4 className="location-name">{location.name}</h4>
@@ -26,7 +26,7 @@ const Card = ({ location, onClick, showModal }) => {
           <ul>
             <li>
               <img src="Users.svg" alt="Users icon" />
-              {location.userCount}
+              {location.userCount} Users
             </li>
             <li>
               <img src="Timezone.svg" alt="Timezone icon" />
